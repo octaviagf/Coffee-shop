@@ -41,10 +41,10 @@ const keepOrdering = function () {
 
   if (answer === "") {
     alert("No empty fields.");
-    answer = prompt("Would you like to keep ordering?");
-  } else if (answer === "yes") {
+    keepOrdering()
+  } else if (answer.toLowerCase() === "yes") {
     order();
-  } else if (answer === "no") {
+  } else if (answer.toLowerCase() === "no") {
     alert("Your order has been made!");
   }
 };
